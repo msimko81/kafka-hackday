@@ -30,3 +30,6 @@ Delete the topic
 
 # Java consumer service
 
+Run the spring boot app and send some requests.
+
+    curl --header "Content-Type: application/json" --request POST --data '{"id": 123,"data":"some user data"}' http://localhost:8080/kafka/publish
