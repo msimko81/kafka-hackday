@@ -1,5 +1,6 @@
 package com.emailtech.hackaton.kafka.producer;
 
+import com.emailtech.hackaton.kafka.dto.UserPayload;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +13,9 @@ public class KafkaProducer {
 
     private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
 
-    private final KafkaTemplate<String, String> kafkaTemplate;
+    private final KafkaTemplate<String, UserPayload> kafkaTemplate;
 
-    public void send(String topic, String payload) {
+    public void send(String topic, UserPayload payload) {
         log.info("sending payload='{}' to topic='{}'", payload, topic);
         kafkaTemplate.send(topic, payload);
     }
