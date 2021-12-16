@@ -16,7 +16,7 @@ Start a new producer, insert some messages separated by `Enter` and quit by pres
 
     /opt/bitnami/kafka/bin/kafka-console-producer.sh --broker-list kafka:9092 --producer.config /opt/bitnami/kafka/config/producer.properties --topic test
 
-Collect those messages by a consumer
+Collect those messages by a consumer (press `Ctrl+C` to stop consuming messages)
     
     /opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic test --consumer.config /opt/bitnami/kafka/config/consumer.properties --from-beginning
 
