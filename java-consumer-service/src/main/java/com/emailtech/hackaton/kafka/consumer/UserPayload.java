@@ -1,4 +1,4 @@
-package com.emailtech.hackaton.kafka.dto;
+package com.emailtech.hackaton.kafka.consumer;
 
 import lombok.Data;
 
