@@ -12,7 +12,7 @@ Create a new topic (with name test)
 
     /opt/bitnami/kafka/bin/kafka-topics.sh --create --bootstrap-server kafka:9092 --replication-factor 1 --partitions 1 --topic test
 
-Start a new producer, insert some messages separated by <Enter> and quit by pressing <Ctrl+D>
+Start a new producer, insert some messages separated by `Enter` and quit by pressing `Ctrl+D`
 
     /opt/bitnami/kafka/bin/kafka-console-producer.sh --broker-list kafka:9092 --producer.config /opt/bitnami/kafka/config/producer.properties --topic test
 
